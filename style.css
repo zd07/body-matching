@@ -1,0 +1,58 @@
+.main{
+    width: 70%;
+    background-color: aliceblue;
+    margin: auto;
+    display: flex;
+    box-shadow: 2px 3px 10px 3px rgb(220 214 214);
+}
+.body{
+    padding-top: 15px;
+    padding-left: 20px;
+    display: flex;
+}
+.boy-img{
+    height: 560px;
+}
+.body-part{
+    width: 50px;
+    padding-left: 50px;
+}
+.body-part img{
+    width: 70px;
+    padding-top: 20px;
+    /* display: block; */
+}
+.span{
+    color: green;
+    position: absolute;
+    font-size: 35px;
+}
+.span-x{
+    color: red;
+    position: absolute;
+    font-size: 35px;
+}
+.eye-span{
+    margin-left: 220px;
+    margin-top: 165px;
+}
+.eye-span1{
+    margin-left: 310px;
+    margin-top: 155px;;
+}
+.eye-span2{
+    margin-left: 15px;
+    margin-top: -435px;;
+}
+.ear-span{
+    margin-left: 140px;
+    margin-top: 190px;
+}
+.ear-span1{
+    margin-left: 375px;
+    margin-top: 165px;
+}
+.ear-span2{
+    margin-left: 15px;
+    margin-top: -345px;
+}

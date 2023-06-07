@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Matching</title>
+</head>
+<body>
+    <div class="main">
+        <div class="body">
+            <img class="boy-img" src="./images/boy.svg" alt="boyImage" usemap="#boy" height="560px" width="560px">
+            <map id="boy" name="boy">
+                <area shape="rect" coords="222,175,247,204" style="cursor: pointer;" alt="" onclick="myfunc(1)" id="eye-area">
+                <area shape="rect" coords="313,165,336,198" style="cursor: pointer;" alt="" onclick="myfunc(1)" id="ear-area">
+                <area shape="circle" coords="162,220,25" style="cursor: pointer;" alt="" onclick="myfunc(2)" id="ear-area">
+                <area shape="circle" coords="395,185,20" style="cursor: pointer;" alt="" onclick="myfunc(2)" id="ear-area">
+                <area shape="circle" coords="100,300,30" style="cursor: pointer;" alt="" onclick="myfunc(3)" id="ear-area">
+                <area shape="circle" coords="460,230,30" style="cursor: pointer;" alt="" onclick="myfunc(3)" id="ear-area">
+                <area shape="rect" coords="255,205,315,240" style="cursor: pointer;" alt="" onclick="myfunc(4)" id="ear-area">
+                <area shape="circle" coords="285,185,10" style="cursor: pointer;" alt="" onclick="myfunc(5)" id="ear-area">
+
+            </map>
+
+            <!-- <img  src="./images/eye.svg" alt=""> -->
+        </div>
+        <div class="body-part">
+            <img class="parts" src="./images/eye.svg" alt="" onclick="eye(this)">
+            <img class="parts" src="./images/ear.svg" alt="" onclick="ear(this)">
+            <img class="parts"  src="./images/hand.svg" alt="" onclick="hand(this)">
+            <img class="parts" src="./images/mouth.svg" alt="" onclick="mouth(this)">
+            <img class="parts" src="./images/nose.svg" alt="" onclick="nose(this)">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
