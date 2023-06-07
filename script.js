@@ -60,7 +60,7 @@ function myfunc(val){
         
         body[0].appendChild(span);
         body[0].appendChild(span1)
-        imgTag[0].id=""
+        imgTag[1].id=""
         bodyPart[0].appendChild(span2);
         }
     else if(imgTag[2].id=='hand' && val==3){
