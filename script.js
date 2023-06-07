@@ -68,42 +68,69 @@ function myfunc(val){
     var span1=createSpan();
     var span2=createSpan();
 
-    span.style.marginTop='275px';
-    span.style.marginLeft='85px';
-    span1.style.marginTop='215px';
-    span1.style.marginLeft='450px'
-    span2.style.marginTop='-255px';
-    span2.style.marginLeft='15px';
+    span.classList.add('hand-span');
+    span1.classList.add('hand-span1');
+    span2.classList.add('hand-span2');
+    // span1.style.marginTop='215px';
+    // span1.style.marginLeft='450px'
+    // span2.style.marginTop='-255px';
+    // span2.style.marginLeft='15px';
     body[0].style.display='flex';
     body[0].appendChild(span);
     body[0].appendChild(span1)
-    imgTag[1].id=""
+    imgTag[2].id=""
     bodyPart[0].appendChild(span2);
     }
+    else if (imgTag[2].id=='hand' && val != 3){
+        var span=createSpanX();
+        var span1=createSpanX()
+        var span2=createSpanX()
+        span.classList.add('hand-span')
+        span1.classList.add('hand-span1');
+        span2.classList.add('hand-span2');
+        body[0].appendChild(span);
+        body[0].appendChild(span1)
+        imgTag[2].id=""
+        bodyPart[0].appendChild(span2);
+        }
     else if(imgTag[3].id=='mouth' && val==4){
         var span=createSpan();
         var span1=createSpan();
         console.log(span)
-        span.style.marginTop='195px';
-        span.style.marginLeft='275px';
-        span1.style.marginTop='-160px';
-        span1.style.marginLeft='15px';
+        span.classList.add('mouth-span');
+        span1.classList.add('mouth-span1')
         body[0].appendChild(span);
-        imgTag[1].id=""
+        imgTag[3].id=""
         bodyPart[0].appendChild(span1);
     }
+    else if (imgTag[3].id=='mouth' && val != 4){
+        console.log('hi')
+        var span=createSpanX();
+        var span1=createSpanX()
+        span.classList.add('mouth-span')
+        span1.classList.add('mouth-span1');
+        body[0].appendChild(span);
+        bodyPart[0].appendChild(span1)
+        imgTag[3].id=""
+        }
     else if(imgTag[4].id=='nose' && val==5){
         var span=createSpan();
         var span1=createSpan();
-        console.log(span)
-        span.style.marginTop='160px';
-        span.style.marginLeft='275px';
-        span1.style.marginTop='-70px';
-        span1.style.marginLeft='15px';
+        span.classList.add('nose-span');
+        span1.classList.add('nose-span1');
         body[0].appendChild(span);
-        imgTag[1].id=""
+        imgTag[4].id=""
         bodyPart[0].appendChild(span1);
     }
+    else if (imgTag[4].id=='nose' && val != 5){
+        var span=createSpanX();
+        var span1=createSpanX()
+        span.classList.add('nose-span')
+        span1.classList.add('nose-span1');
+        body[0].appendChild(span);
+        bodyPart[0].appendChild(span1)
+        imgTag[4].id=""
+        }
 }
 function eye(i){
     
